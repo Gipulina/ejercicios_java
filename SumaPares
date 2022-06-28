@@ -1,0 +1,25 @@
+public class SumaPares {
+    public static void main(String[] args) {
+         Integer a = 23;
+         Integer b = 15;
+         Integer mayor, menor;
+         Integer suma = 0;
+        if (a>b){
+            mayor = a;
+            menor = b;
+        }else {
+            mayor = b;
+            menor = a;
+        }
+        System.out.println("Los numeros");
+        for(int i=menor; i<= mayor; i++){
+            if(i%2==0){
+                //comprobamos si es es par.
+                System.out.println(i);
+                suma += i;
+            }
+        }
+        System.out.println("sumados dan");
+        System.out.println(suma);
+    }
+}
